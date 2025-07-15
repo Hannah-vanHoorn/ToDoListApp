@@ -1,0 +1,77 @@
+* {
+  box-sizing: border-box; /* Ensure consistent element sizing */
+}
+
+.container {
+  background: #add4f6; /* Light blue background for the container */
+  padding: 25px;
+  max-width: 760px; /* Maximum width of the container */
+  margin: 25px auto; /* Center the container */
+  overflow: hidden;
+  border-radius: 10px; /* Rounded corners */
+  border: 4px solid #7fa2de; /* Border color */
+  font-family: sans-serif; /* Font for the entire app */
+}
+
+h1,
+h2 {
+  margin: 0;
+  text-align: center;
+  text-transform: uppercase; /* Capitalized headings */
+}
+
+h2 {
+  font-size: 20px;
+  border-bottom: 1px solid #7fa2de; /* Divider below the title */
+  padding-bottom: 10px;
+  color: #575cab; /* Heading color */
+}
+
+.new-task-container {
+  text-align: center; /* Center alignment for new task input */
+}
+
+.box {
+  padding: 10px 15px;
+  border: 2px solid #7fa2de;
+  border-radius: 5px; /* Slightly rounded task boxes */
+  background: #fff; /* White background for task lists */
+  margin: 15px 0;
+}
+
+.todo-list {
+  float: left;
+  width: 46%; /* Incomplete tasks take up 46% width */
+}
+
+.complete-list {
+  float: right;
+  width: 46%; /* Completed tasks take up 46% width */
+}
+
+ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 10px;
+  border-bottom: 1px dotted #ccc; /* Dashed separator between tasks */
+}
+
+.update {
+  float: right;
+  background-color: blue;
+  color: white;
+  border: 0;
+  padding: 3px 5px; /* Styling for the update button */
+}
+
+.delete {
+  float: right;
+  background-color: red;
+  color: white;
+  border: 0;
+  padding: 3px 5px; /* Styling for the delete button */
+}

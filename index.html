@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head> 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do App</title>
+    <!-- Link to the external CSS file for styling -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main container for the To-Do App -->
+    <section class="container">
+      <!-- Application heading -->
+      <h1 id="header" class="header">To-Do App</h1>
+
+      <!-- Form for adding new tasks -->
+      <form class="new-task-container box">
+        <!-- Label for the input field to describe its purpose -->
+        <label for="new-task">Add New Task</label>
+        <!-- Input field where the user can enter the task -->
+        <input type="text" id="new-task" />
+        <!-- Button to submit the form and add the new task -->
+        <input type="submit" id="addTask" value="Add Task" />
+      </form>
+
+      <!-- Section to display the incomplete tasks -->
+      <div class="todo-list box">
+        <h2>Incomplete Tasks</h2>
+        <!-- Unordered list to contain the incomplete tasks -->
+        <ul id="items">
+          <!-- Example list items representing incomplete tasks -->
+          <li class="item">
+            <input type="checkbox" />
+            <label>Here Task Name</label>
+          </li>
+          <li class="item">
+            <input type="checkbox" />
+            <label>Here Task Name</label>
+          </li>
+          <li class="item">
+            <input type="checkbox" />
+            <label>Here Task Name</label>
+          </li>
+        </ul>
+      </div>
+      <!-- /todo-list -->
+
+      <!-- Section to display the completed tasks -->
+      <div class="complete-list box">
+        <h2>Completed Tasks</h2>
+        <!-- Unordered list to contain the completed tasks -->
+        <ul>
+          <!-- Example list item representing a completed task -->
+          <li class="item">
+            Here Task Name 
+            <!-- Button to delete the completed task -->
+            <button class="delete">Delete</button>
+          </li>
+        </ul>
+      </div>
+      <!-- /complete-list -->
+    </section>
+    <!-- /container -->
+
+    <!-- Link to the external JavaScript file for functionality -->
+    <script src="script.js"></script>
+  </body>
+</html>
